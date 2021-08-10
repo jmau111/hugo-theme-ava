@@ -6,7 +6,7 @@ type: "post"
 draft: false
 ---
 
-```golang
+```haskell
 factorial n = go n 1
     where
     go n res

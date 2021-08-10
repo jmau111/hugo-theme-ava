@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <p class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</p>
+  {{- if .Site.Data.social }}
+  <ul class="social-links">
+    {{ range .Site.Data.social }}
+      <li>
+        <a class='icon icon-{{ .html_class | default "icon" }}' href="{{ .link }}" aria-label="Follow on {{ .name }}"></a>
+      </li>
+    {{ end }}
+  </ul>
+  {{- end }}
+</footer>

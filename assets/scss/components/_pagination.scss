@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: calc(var(--gap) / 2);
+  .page-item {
+    min-width: auto;
+    font-weight: bold;
+    &.active {
+        a {
+            color: var(--color);
+            background-image: none;
+        }
+    }
+  }
+}

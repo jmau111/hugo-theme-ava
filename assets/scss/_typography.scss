@@ -1,0 +1,119 @@
+body {
+  font: var(--font);
+  line-height: 1;
+  font-size: 1rem;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
+}
+
+// @see https://codepen.io/laurilllll/pen/ExgJYRm
+h1,
+.h1,
+.site-title,
+h2,
+.h2,
+h3,
+.h3,
+.single .post-date,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+li {
+  font-family: var(--font-title);
+  font-weight: 800;
+  // Font minimum, preferred and maximum value
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+p,
+li {
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+// Font size variables
+h1,
+.h1 {
+  --min: 2em; // minimum value
+  --val: 5vw; // preferred value = 5% viewport width
+  --max: 3em; // maximum value
+}
+h2,
+.h2 {
+  --min: 1.5em; /* minimum value */
+  --val: 4vw; /* preferred value = 4% viewport width */
+  --max: 2.25em; /* maximum value */
+}
+.site-title,
+h3,
+.h3 {
+  --min: 1.35em; /* minimum value */
+  --val: 3.5vw; /* preferred value = 3.5% viewport width */
+  --max: 2em; /* maximum value */
+}
+h4,
+.h4,
+.single .post-date {
+  --min: 1.25em; // minimum value
+  --val: 2.5vw; // preferred value = 2.5% viewport width
+  --max: 1.8em; // maximum value
+}
+h5,
+.h5,
+h6,
+.h6 {
+  --min: 1.25em; // minimum value
+  --val: 2.25vw; // preferred value = 2.25% viewport width
+  --max: 1.6em; // maximum value
+}
+.single {
+  .post-date {
+    font-weight: 400;
+  }
+}
+.content {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    scroll-margin-top: 73px;
+    margin-top: var(--gap);
+    margin-bottom: calc(var(--gap) / 2);
+  }
+}
+p,
+li {
+  --min: 1.25em; // minimum value
+  --val: 2vw; // preferred value = 2% viewport width
+  --max: 1.4em; // maximum value
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  margin: var(--gap) 0;
+}
+li {
+  margin: calc(var(--gap)/3) 0;
+}
+p + p,
+p + ol,
+p + ul,
+p + iframe {
+  margin: calc(var(--gap) / 2) 0;
+}
+pre {
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: initial;
+}

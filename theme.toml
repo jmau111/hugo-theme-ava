@@ -1,0 +1,14 @@
+name = "Ava"
+license = "MIT"
+licenselink = "https://github.com/jmau111/hugo-theme-ava/blob/mainLICENSE"
+description = "Ava is a light theme for your blog with essential features you might dig in."
+
+homepage = "https://github.com/jmau111/hugo-theme-ava"
+demosite = "https://hugo-theme-ava.netlify.app/"
+
+tags = ["responsive","minimal","clean","blog","dark","seo"]
+features = ["blog","dark-mode","seo"]
+
+[author]
+  name = "Julien Maury"
+  homepage = "https://www.julien-maury.dev"

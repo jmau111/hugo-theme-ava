@@ -1,0 +1,12 @@
+{{ define "body_classes" }}single{{ end }}
+{{- define "main" }}
+<article>
+  <header class="subheader">
+    <h1 class="post-title slide">{{ .Title }}</h1>
+    <span class="slide">{{ partial "date.html" . }}</span>
+  </header>
+  <div class="content slide-invert">
+    {{ .Content }}
+  </div>
+</article>
+{{- end }}

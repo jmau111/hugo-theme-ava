@@ -1,0 +1,7 @@
+<li class="post-item">
+    <a class="post-link h5" href="{{ .Permalink }}">{{ .Title  }}</a>
+    {{ partial "date.html" . }}
+    {{- if .Params.Description }}
+        <p>{{ .Params.Description }}</p>
+    {{- end }}
+</li>

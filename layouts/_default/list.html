@@ -1,0 +1,17 @@
+{{ define "body_classes" }}list{{ end }}
+{{- define "main" }}
+<article>
+  <header class="subheader">
+    <h1 class="post-title slide">{{ .Title }}</h1>
+  </header>
+  <div class="content slide-invert">
+    <ul class="listing-posts">
+      {{ $paginator := .Paginate (.Pages) }}
+      {{ range $paginator.Pages }}
+          {{ partial "summary" . }}
+      {{ end }}
+    </ul>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</article>
+{{- end }}

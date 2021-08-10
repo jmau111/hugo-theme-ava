@@ -1,0 +1,52 @@
+<!--
+    Provided by https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/
+-->
+<title itemprop="name">{{ .Title }} | {{ .Site.Params.meta_tags.meta_og_title }}</title>
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Params.meta_tags.meta_og_title }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Params.meta_tags.meta_og_title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Params.meta_tags.meta_og_title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Params.meta_tags.meta_og_title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.meta_tags.meta_og_sitename }}" />
+
+<meta name="description" content="{{ .Params.description | default .Site.Params.meta_tags.meta_description }}" />
+<meta itemprop="description" content="{{ .Params.description | default .Site.Params.meta_tags.meta_description }}" />
+<meta property="og:description" content="{{ .Params.description | default .Site.Params.meta_tags.meta_description }}" />
+<meta name="twitter:description" content="{{ .Params.description | default .Site.Params.meta_tags.meta_description }}" />
+
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" /> 
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<meta property="og:locale" content="{{ .Language.Lang }}">
+<meta name="language" content="{{ .Language.LanguageName }}">
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{ end }}
+
+{{ with .Params.image }} 
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" /> 
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" /> 
+{{ else }}
+  <meta itemprop="image" content="{{ .Params.image | default .Site.Params.meta_tags.meta_og_image | absURL }}" />
+  <meta property="og:image" content="{{ .Params.image | default .Site.Params.meta_tags.meta_og_image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Params.image | default .Site.Params.meta_tags.meta_og_image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Params.image | default .Site.Params.meta_tags.meta_og_image | absURL }}" /> 
+{{ end }}
+
+<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> 
+
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+<meta name="robots" content="index,follow" /> 
+<meta name="googlebot" content="index,follow" />
+
+<meta name="twitter:site" content="{{ .Site.Params.meta_tags.meta_twitter_site }}">
+<meta name="twitter:creator" content="{{ .Site.Params.meta_tags.meta_twitter_creator }}" />

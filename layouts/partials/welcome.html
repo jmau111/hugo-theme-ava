@@ -1,0 +1,10 @@
+{{- if .Site.Data.welcome }}
+    <p class="intro h2">{{ .Site.Data.welcome.intro }}</p>
+    <p class="subtext">{{ .Site.Data.welcome.subtext }}</p>
+    <ul class="listing-posts">
+    {{ range first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+        {{ partial "summary" . }}
+    {{ end }}
+    </ul>
+    <p class="welcome-btn-container"><a class="btn" href='{{ "/posts/" | relLangURL }}'>{{ .Site.Data.welcome.cta.text}}</a></p>
+{{- end }}

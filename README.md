@@ -85,7 +85,7 @@ Add you google analytics ID to the `config.toml`
 ```
 // config.toml
 [params]
-  google_analytics_id="UA-XXXXXXXX-X"
+  ga_id="UA-XXXXXXXX-X"
 ```
 
 ### Menu

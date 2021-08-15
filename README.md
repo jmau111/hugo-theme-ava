@@ -98,7 +98,6 @@ A lot of stuff, including:
 
 * handling images in templates with hugo features (but you can use images as meta og for SEO purpose starting from now)
 * i18n
-* contact form
 * shortcodes
 
 But still, it's not a multi-purpose theme.

@@ -5,6 +5,7 @@
 @import "typography";
 @import "mode-light";
 @import "mode-dark";
+@import "components/contact-form";
 @import "components/pagination";
 
 /*
@@ -331,7 +332,7 @@
     }
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .hide-mobile {
     display: none;
   }
@@ -417,7 +418,7 @@
     margin-bottom: 1.5rem;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .hide-desktop {
     display: none;
   }

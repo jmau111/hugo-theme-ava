@@ -1,0 +1,26 @@
+.contact-form {
+  p {
+    margin: 0;
+  }
+  p + p {
+    margin-top: 1rem;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 0;
+    border: 1px solid var(--color-footer);
+    outline-color: var(--accent-color);
+    background: var(--bg-inputs);
+    color: var(--color);
+    border-radius: calc(var(--radius)/4);
+    box-sizing: border-box;
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    min-height: 14rem;
+    resize: vertical;
+  }
+}

@@ -7,7 +7,7 @@ homepage = "https://github.com/jmau111/hugo-theme-ava"
 demosite = "https://hugo-theme-ava.netlify.app/"
 
 tags = ["responsive","minimal","clean","blog","dark","seo"]
-features = ["blog","dark-mode","seo"]
+features = ["blog","dark-mode","seo","form"]
 
 [author]
   name = "Julien Maury"

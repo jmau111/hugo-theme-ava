@@ -92,11 +92,27 @@ Add you google analytics ID to the `config.toml`
 
 You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 
+### Images
+
+You can set a default image in `config.toml`:
+
+```
+  [params.meta_tags]
+          meta_og_image = "https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/default.jpeg"
+```
+
+You can customize per each post in the front matter:
+
+```md
+image: "/images/mangoose.jpeg"
+```
+
+
+If you don't set anything then the theme display the default image "https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/default.jpeg".
 ## TODO
 
 A lot of stuff, including:
 
-* handling images in templates with hugo features (but you can use images as meta og for SEO purpose starting from now)
 * i18n
 * shortcodes
 

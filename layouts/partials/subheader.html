@@ -1,0 +1,10 @@
+<header class="subheader" style="background-image: url({{ .context.Params.image | default .site.Params.meta_tags.meta_og_image }});">
+    <div class="title-container slide-invert"> 
+        {{- if .isHome }}
+            <h2 class="h1 post-title">{{ .context.Title | default .site.Title }}</h2>
+        {{- else }}
+            <h1 class="post-title">{{ .context.Title | default .site.Title }}</h1>
+        {{- end }}
+        {{ .date }}
+    </div>
+</header>

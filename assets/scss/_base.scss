@@ -24,10 +24,10 @@ blockquote {
   border-left: 5px solid var(--accent-color);
   margin: var(--gap) 10px;
   letter-spacing: -0.02rem;
-  padding: .5em 1rem .5em 1.5rem;
+  padding: 0.5em 1rem 0.5em 1.5rem;
   quotes: "\201C""\201D""\2018""\2019";
   line-height: 1.3;
-  
+
   p {
     margin: 1em 0;
     line-height: 1.3;
@@ -50,7 +50,7 @@ button:not(.theme__btn):not(.nav-btn),
   color: var(--color-btn);
   align-items: center;
   align-self: start;
-  border-radius: var(--radius);
+  border-radius: calc(var(--radius) * 2);
   cursor: pointer;
   display: inline-flex;
   font-weight: 500;

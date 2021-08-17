@@ -1,4 +1,4 @@
-baseURL = "https://www.example.com/"
+baseURL = "https://hugo-theme-ava.netlify.app/"
 languageCode = "en"
 title = "Hugo Ava Theme"
 theme = "hugo-theme-ava"
@@ -21,6 +21,7 @@ canonifyURLs = true
 [params]
   ga_id=""
   mainSections = ["post"]
+  
 
   [params.meta_tags]
     meta_description = "Ava is a light theme for your blog with essential features you might dig in."
@@ -33,6 +34,23 @@ canonifyURLs = true
     meta_twitter_card = "summary"
     meta_twitter_site = "@gohugoio"
     meta_twitter_creator = "@gohugoio"
+
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = false
+        tabWidth = 4
+        noClasses = false
+        pygmentsUseClasses = true
+        pygmentsCodefences = true
+
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe= true   
+
+    [markup.blackFriday]
+        angledQuotes = true
 
 [[menu.main]]
 	name = "Home"

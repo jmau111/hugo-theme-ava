@@ -36,7 +36,7 @@ cd mynewsite
 git clone https://github.com/jmau111/hugo-theme-ava.git themes/hugo-ava
 ```
 
-## Copy example content
+### Copy example content
 
 You can use contents generated for the demo:
 
@@ -44,17 +44,17 @@ You can use contents generated for the demo:
 cp -a themes/hugo-theme-ava/exampleSite/. .
 ```
 
-## Change colors
+### Change colors
 
 Feel free to change colors for both light and dark mode. See `themes/hugo-theme-ava/assets/scss/_mode_light.scss` or `themes/hugo-theme-ava/assets/scss/_mode_dark.scss`.
 
 You can customize other CSS variables in `themes/hugo-theme-ava/assets/scss/_variables.scss`
 
-## Don't forget to change the favicon
+### Don't forget to change the favicon
 
 You don't have to remove the one set in the theme but ensure you replace the one in the `/static/` folder at the root or your project.
 
-## humans.txt
+### humans.txt
 
 I've included the `humans.txt` file cause I care about this file. You can put your name in it or replace this entire file in your `/static/` folder at the root of the project:
 

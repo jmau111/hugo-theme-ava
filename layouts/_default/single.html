@@ -1,10 +1,5 @@
 {{ define "body_classes" }}page{{ end }}
 
-{{- define "main" }}
-  <article>
-    {{ partial "subheader.html" (dict "context" . "site" $.Site) }}
-    <div class="content slide-invert">
-      {{ .Content }}
-    </div>
-  </article>
+{{- define "content" }}
+  {{ .Content }}
 {{- end }}

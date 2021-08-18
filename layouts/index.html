@@ -1,11 +1,10 @@
 {{ define "body_classes" }}home{{ end }}
 
-{{- define "main" }}
-    <article>
-        {{ partial "subheader.html" (dict "context" . "site" $.Site "isHome" true) }}
-        <div class="content slide-invert">
-            {{ .Content }}
-            {{ partial "welcome.html" . }}
-        </div>
-    </article>
+{{- define "subheader" }}
+    {{ partial "subheader.html" (dict "context" . "site" $.Site "isHome" true) }}
+{{- end }}
+
+{{- define "content" }}
+    {{ .Content }}
+    {{ partial "welcome.html" . }}
 {{- end }}

@@ -124,7 +124,8 @@ If you don't set anything then the theme display the default image "https://raw.
 A lot of stuff, including:
 
 * i18n
-* shortcodes
+* more shortcodes
+* author box 
 
 But still, it's not a multi-purpose theme.
 

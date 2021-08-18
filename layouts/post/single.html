@@ -1,11 +1,10 @@
 {{ define "body_classes" }}single{{ end }}
 
-{{- define "main" }}
-  <article>
-    {{ $date := partial "date.html" . }}
-    {{ partial "subheader.html" (dict "context" . "date" $date "site" $.Site) }}
-    <div class="content slide-invert">
-      {{ .Content }}
-    </div>
-  </article>
+{{- define "subheader" }}
+  {{ $date := partial "date.html" . }}
+  {{ partial "subheader.html" (dict "context" . "date" $date "site" $.Site) }}
+{{- end }}
+
+{{- define "content" }}
+  {{ .Content }}
 {{- end }}

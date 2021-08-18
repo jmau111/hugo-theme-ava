@@ -31,19 +31,37 @@
       <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
     {{- end }}
 
+    <!-- block additional styles in templates -->
     {{ block "stylesheets" . }}{{ end }}
+    <!-- /block additional styles in templates  -->
   </head>
+
   <body class='{{ block "body_classes" . }}{{ end }}'>
 
     {{ partial "header.html" . }}
     
     <main class="site-main">
-      {{ block "main" . }}{{ end }}
+      <!-- let's keep a way to override the whole structure by 
+      redefining the whole block main -->
+      {{ block "main" . }}
+        <article>
+          {{- block "subheader" . }}
+            {{ partial "subheader.html" (dict "context" . "site" $.Site) }}
+          {{ end }}
+          <div class="content slide-invert">
+            {{- block "content" . }}{{ end }}
+          </div>
+        </article>
+      {{ end }}
     </main>
-    {{ partial "footer.html" . }}
+
+    {{ partialCached "footer.html" . }}
 
     {{ $prefixFree := resources.Get "js/prefixfree.js" }}
+
+    <!-- block additional scripts in templates -->
     {{ block "scripts" . }}{{ end }}
+    <!-- block additional scripts in templates -->
 
     {{- if .Site.IsServer }}
       <script src="{{ $prefixFree.RelPermalink }}" defer="defer"></script>
@@ -51,6 +69,6 @@
       <script src="{{ ($prefixFree | minify | fingerprint).RelPermalink }}"></script>
     {{- end }}
 
-    {{ partial "google-analytics.html" . }}
+    {{ partialCached "google-analytics.html" . .Site.Params.ga_id }}
   </body>
 </html>

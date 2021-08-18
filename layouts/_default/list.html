@@ -1,16 +1,11 @@
 {{ define "body_classes" }}list{{ end }}
 
-{{- define "main" }}
-  <article>
-    {{ partial "subheader.html" (dict "context" . "site" $.Site) }}
-    <div class="content slide-invert">
-      <ul class="listing-posts">
-        {{ $paginator := .Paginate (.Pages) }}
-        {{ range $paginator.Pages }}
-            {{ partial "summary" . }}
-        {{ end }}
-      </ul>
-      {{ template "_internal/pagination.html" . }}
-    </div>
-  </article>
+{{ define "content" }}
+  <ul class="listing-posts">
+    {{ $paginator := .Paginate (.Pages) }}
+    {{ range $paginator.Pages }}
+        {{ partial "summary" . }}
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
 {{- end }}

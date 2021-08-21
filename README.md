@@ -32,7 +32,7 @@ This will create a fresh Hugo site in the folder `my-site`.
 
 Clone this repo into the themes folder
 ```
-cd mynewsite
+cd my-site
 git clone https://github.com/jmau111/hugo-theme-ava.git themes/hugo-ava
 ```
 

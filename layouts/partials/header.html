@@ -19,8 +19,10 @@
             <ul class="site-menu">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                    <li>
-                        <a href="{{ .URL }}"{{ if $currentPage.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>
+                    {{ $menu_item_url := .URL | relLangURL }}
+                    {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+                    <li{{ if eq $menu_item_url $page_url }} class="active"{{ end }}>
+                        <a href="{{ .URL }}"{{ if eq $menu_item_url $page_url }} aria-current="page"{{ end }}>
                             <span>{{ .Name }}</span>
                         </a>
                     </li>

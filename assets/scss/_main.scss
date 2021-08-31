@@ -84,7 +84,7 @@
   }
   .title-container {
     margin: 0 auto;
-    padding: 3rem;
+    padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 0.5rem;
     color: var(--color-subheader);
@@ -114,7 +114,6 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
-
     li + li {
       margin-left: 2rem;
     }
@@ -122,6 +121,9 @@
       color: var(--color-header);
       text-transform: uppercase;
       font-weight: 900;
+      &[aria-current="page"] {
+        color: var(--accent-color);
+      }
     }
   }
 }

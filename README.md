@@ -10,8 +10,6 @@
 
 </div>
 
-[See demo](https://hugo-theme-ava.netlify.app/)
-
 ## Installation
 
 ### Install Hugo

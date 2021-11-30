@@ -27,8 +27,8 @@
       <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{- else }}
       {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
-      <script src="{{ ($darkm | minify | fingerprint).RelPermalink }}"></script>
-      <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+      <script src="{{ ($darkm | minify | fingerprint).Permalink }}"></script>
+      <link rel="stylesheet" href="{{ ($style | minify | fingerprint).Permalink }}">
     {{- end }}
 
     <!-- block additional styles in templates -->

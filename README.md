@@ -10,6 +10,8 @@
 
 </div>
 
+[See online demo](https://demos.julien-maury.dev/hugo-theme-ava/)
+
 ## Installation
 
 ### Install Hugo

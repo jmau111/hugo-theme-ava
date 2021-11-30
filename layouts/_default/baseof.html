@@ -69,6 +69,6 @@
       <script src="{{ ($prefixFree | minify | fingerprint).RelPermalink }}"></script>
     {{- end }}
 
-    {{ partialCached "google-analytics.html" . .Site.Params.ga_id }}
+    {{ partialCached "google-analytics.html" . }}
   </body>
 </html>

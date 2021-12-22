@@ -1,3 +1,7 @@
+* {
+  outline-color: var(--accent-color);
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--color);
@@ -73,4 +77,21 @@ pre {
   padding: 1.5rem;
   margin: 1.25rem 0;
   overflow-x: auto;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.screen-reader-text:focus {
+  position:static;
+  width: auto;
+  height: auto;
 }

@@ -1,7 +1,7 @@
 # Hugo Ava Theme
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/screenshot.png" alt="" width="100%">
+  <img src="https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/screenshot2.png" alt="" width="100%">
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/jmau111/hugo-theme-ava/blob/main/LICENSE)
 [![release](https://img.shields.io/github/release/jmau111/hugo-theme-ava.svg)](https://github.com/jmau111/hugo-theme-ava/releases/latest)

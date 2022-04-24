@@ -131,4 +131,4 @@ But still, it's not a multi-purpose theme.
 
 ## License
 
-You're welcome to fork this, but keep the licence MIT please. 
+You're welcome to fork this, but keep the license MIT please. 

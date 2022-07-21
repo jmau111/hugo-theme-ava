@@ -1,4 +1,4 @@
-<header class="subheader" style="background-image: url({{ .context.Params.image | default .site.Params.meta_tags.meta_og_image }});">
+<header class="subheader" style="background-image: url({{ .context.Params.image | default .site.Params.meta_tags.meta_og_image | absURL }});">
     <div class="title-container slide-invert"> 
         {{- if .isHome }}
             <h2 class="h1 post-title">{{ .context.Title | default .site.Title }}</h2>

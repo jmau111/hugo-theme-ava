@@ -1,4 +1,4 @@
-baseURL = "https://demos.julien-maury.dev/hugo-theme-ava/"
+baseURL = "/"
 languageCode = "en"
 title = "Hugo Ava Theme"
 theme = "hugo-theme-ava"

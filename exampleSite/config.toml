@@ -21,6 +21,7 @@ canonifyURLs = true
 [params]
   ga_id=""
   mainSections = ["post"]
+  disqus = "xxxxxxx"
   
 
   [params.meta_tags]

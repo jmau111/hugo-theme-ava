@@ -119,6 +119,13 @@ image: "/images/mangoose.jpeg"
 
 
 If you don't set anything then the theme display the default image "https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/default.jpeg".
+
+## Comments
+
+There's now a custom Disqus partial. Please be aware this is not the most privacy-focused solution on the market.
+
+To enable it, edit the Site variable `disqus` in the `config.toml` and replace "xxxxxxx" by your Disqus handle. Otherwise, nothing will be loaded.
+
 ## TODO
 
 A lot of stuff, including:

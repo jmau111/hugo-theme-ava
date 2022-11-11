@@ -29,7 +29,7 @@ canonifyURLs = true
     meta_og_title = "Hugo Ava Theme"
     meta_og_sitename = "Hugo Ava Theme"
     meta_og_type = "website"
-    meta_og_url = "https://hugo-ava.netlify.app"
+    meta_og_url = "https://demos.julien-maury.dev/hugo-theme-ava"
     meta_og_image = "https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/default.jpeg"
     meta_og_description = "Ava is a light theme for your blog with essential features you might dig in."
     meta_twitter_card = "summary"
@@ -54,8 +54,8 @@ canonifyURLs = true
         angledQuotes = true
 
 [[menu.main]]
-	name = "Home"
-	url = "/"
+    name = "Home"
+    url = "/"
     weight = 1
 
 [[menu.main]]

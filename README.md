@@ -10,7 +10,7 @@
 
 </div>
 
-[See online demo](https://demos.julien-maury.dev/hugo-theme-ava/)
+[See online demo](https://jmau111.github.io/hugo-theme-ava/)
 
 ## Installation
 

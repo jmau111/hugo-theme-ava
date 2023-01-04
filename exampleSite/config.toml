@@ -4,6 +4,7 @@ title = "Hugo Ava Theme"
 theme = "hugo-theme-ava"
 paginate = 7
 mainSections = "post"
+canonifyURLs = true
 
 [languages]
   [languages.en]

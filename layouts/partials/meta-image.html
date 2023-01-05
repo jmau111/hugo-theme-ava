@@ -1,0 +1,6 @@
+{{- with .image }}
+<meta itemprop="image" content="{{ . | safeHTMLAttr }}" />
+<meta property="og:image" content="{{ . | safeHTMLAttr }}" /> 
+<meta name="twitter:image" content="{{ .| safeHTMLAttr }}" />
+<meta name="twitter:image:src" content="{{ . | safeHTMLAttr }}" />
+{{- end }}

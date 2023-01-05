@@ -1,5 +1,5 @@
 {{- $image := .context.Params.Image | default .site.Params.DefaultImage -}}
-<header class="subheader" style="background-image: url({{ $image | safeHTML }});">
+<header class="subheader" style="background-image: url({{ $image | safeHTMLAttr }});">
     <div class="title-container slide-invert"> 
         {{- if .context.IsHome }}
             <h2 class="h1 post-title">{{ .context.Title | default .site.Title }}</h2>

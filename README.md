@@ -79,7 +79,7 @@ image: "images/myfeatured.jpg"
 ---
 ```
 
-It's a bit more constraining, but it allows a better organization, as all resources of the page are grouped in the same folder.
+It's a bit more constraining, but it allows a better organization, as all resources of the same page are grouped in the content folder.
 
 **These few changes should not impact previous installations too much. If so, please open an issue.**
 

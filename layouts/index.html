@@ -1,7 +1,7 @@
 {{ define "body_classes" }}home{{ end }}
 
 {{- define "subheader" }}
-    {{ partial "subheader.html" (dict "context" . "site" $.Site "isHome" true) }}
+    {{ partial "subheader.html" (dict "context" . "site" $.Site) }}
 {{- end }}
 
 {{- define "content" }}

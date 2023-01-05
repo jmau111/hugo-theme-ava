@@ -52,7 +52,28 @@ It's not the best practice, but I like to keep things simple.
 
 That's why I call svgs in templates now.
 
-### Subheader and featured images
+### Images
+
+#### Default image
+
+Use absolute URLs:
+
+```
+[params]
+  defaultImage = "https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/default.jpeg"
+```
+
+#### Default og & meta image
+
+Use absolute URLs:
+
+```
+[params]
+  [params.meta_tags]
+    meta_og_image = "https://raw.githubusercontent.com/jmau111/hugo-theme-ava/main/images/default.jpeg"
+```
+
+#### Subheader and featured images
 
 Use the `image` parameter in your frontmatter (posts). If you want to use an external image use an absolute path.
 

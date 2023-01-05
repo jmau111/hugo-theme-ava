@@ -102,11 +102,14 @@
 * nav menu
 * * *******/
 .nav-btn {
-  background: url("/svg/menu.svg") no-repeat center center;
   height: 36px;
   width: 36px;
   border: 0;
   cursor: pointer;
+
+  svg {
+    stroke: var(--accent-color);
+  }
 }
 .site-nav {
   padding: 0 1rem;
@@ -207,32 +210,12 @@
   gap: calc(var(--gap) / 3);
 }
 .icon {
-  filter: invert(1);
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 36px;
   height: 36px;
-
-  &.icon-twitter {
-    background-image: url("/svg/twitter.svg");
-  }
-  &.icon-linkedin {
-    background-image: url("/svg/linkedin.svg");
-  }
-  &.icon-github {
-    background-image: url("/svg/github.svg");
-  }
-  &.icon-instagram {
-    background-image: url("/svg/instagram.svg");
-  }
-  &.icon-dribbble {
-    background-image: url("/svg/dribbble.svg");
-  }
-  &.icon-love {
-    background-image: url("/svg/heart.svg");
-  }
 }
 .icon:hover,
 .icon:focus {
@@ -363,6 +346,7 @@
     top: calc(1px + 2rem);
     padding: calc(var(--gap) / 2);
     width: 70vw;
+    max-width: 500px;
     z-index: 101;
     min-height: 75vh;
     border-radius: var(--radius) 0 0 var(--radius);

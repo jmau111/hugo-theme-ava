@@ -4,7 +4,12 @@
   <ul class="social-links">
     {{ range .Site.Data.social }}
       <li>
-        <a class='icon icon-{{ .html_class | default "icon" }}' href="{{ .link }}" aria-label="Follow on {{ .name }}"></a>
+        <a 
+          class='icon icon-{{ .html_class | default "icon" }}' 
+          href="{{ .link }}"
+          aria-label="Follow on {{ .name }}">
+          {{- partial "svg" .html_class -}}
+        </a>
       </li>
     {{ end }}
   </ul>

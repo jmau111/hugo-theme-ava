@@ -1,0 +1,8 @@
+<!-- @see https://bitbanged.com/posts/how-to-use-inline-svgs-with-hugo/ -->
+<!-- brilliant -->
+{{ $svg := . }}
+{{ $class := print $svg "-icon" }}
+{{ $match := "<svg (.*)?>(.*)</svg>" }}
+
+{{ $replaceWith := printf `<svg width="36" height="36" class="%s" ${1}>${2}</svg>` $class }}
+{{ return (replaceRE $match $replaceWith (printf "/assets/images/%s.svg" $svg | readFile) | safeHTML) }}

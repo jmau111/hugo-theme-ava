@@ -11,7 +11,9 @@
         {{- end }}
     
         <input type="checkbox" id="check-menu" class="check-menu" hidden="">
-        <label for="check-menu" class="nav-btn hide-desktop" aria-label="Open/close menu"><span class="lines"></span></label>
+        <label for="check-menu" class="nav-btn hide-desktop" aria-label="Open/close menu">
+        {{- partialCached "svg" "menu" -}}   
+        </label>
         <nav class="site-nav hide-mobile slide-horizontal">
 
             {{ partial "dark-mode-toggle.html" . }}

@@ -4,7 +4,7 @@ description: "This is desc 8"
 date: 2021-08-08T11:11:11+01:00
 type: "post"
 draft: false
-image: "/images/mangoose.jpeg"
+image: "images/shinjuku.jpg"
 ---
 
 > Non, rien de rien  

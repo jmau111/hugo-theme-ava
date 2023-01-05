@@ -46,11 +46,37 @@ You can use contents generated for the demo:
 cp -a themes/hugo-theme-ava/exampleSite/. .
 ```
 
+### Images
+
+Use the `image` parameter in your frontmatter (posts). There's a default global setting called `defaultImage` too:
+
+```
+[params]
+  ga_id=""
+  mainSections = ["post"]
+  disqus = "xxxxxxx"
+  defaultImage = "images/shinjuku.jpg"
+```
+
+In the demo, the relative paths don't start with a "/" because it's in a subfolder (GitHub pages), but you don't have to do the same.
+
+It's not the best practice but I like to keep things simple.
+
+That's also why I call svgs in templates now.
+
+**These few changes should not impact previous installations. If so, please open an issue.**
+
 ### Change colors
 
 Feel free to change colors for both light and dark mode. See `themes/hugo-theme-ava/assets/scss/_mode_light.scss` or `themes/hugo-theme-ava/assets/scss/_mode_dark.scss`.
 
 You can customize other CSS variables in `themes/hugo-theme-ava/assets/scss/_variables.scss`
+
+### Icons
+
+The theme uses [feather icons](https://feathericons.com/), a beautiful and free set of svg icons. The `/assets/images/` folder contains everything.
+
+It's probably a bit too much, so do not hesitate to delete unused files.
 
 ### Don't forget to change the favicon
 
@@ -87,8 +113,6 @@ hugo
 ```
 baseURL = "https://www.mysite.com/"
 ```
-
-Ensure you use a trailing slash.
 
 ### Google Analytics
 

@@ -72,6 +72,12 @@ Feel free to change colors for both light and dark mode. See `themes/hugo-theme-
 
 You can customize other CSS variables in `themes/hugo-theme-ava/assets/scss/_variables.scss`
 
+### Icons
+
+The theme uses [feather icons](https://feathericons.com/), a beautiful and free set of svg icons. The `/assets/images/` folder contains everything.
+
+It's probably a bit too much, so do not hesitate to delete unused files.
+
 ### Don't forget to change the favicon
 
 You don't have to remove the one set in the theme but ensure you replace the one in the `/static/` folder at the root or your project.

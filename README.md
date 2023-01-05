@@ -114,8 +114,6 @@ hugo
 baseURL = "https://www.mysite.com/"
 ```
 
-Ensure you use a trailing slash.
-
 ### Google Analytics
 
 Add you google analytics ID to the `config.toml`

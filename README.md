@@ -46,25 +46,42 @@ You can use contents generated for the demo:
 cp -a themes/hugo-theme-ava/exampleSite/. .
 ```
 
-### Images
+### SVGs
 
-Use the `image` parameter in your frontmatter (posts). There's a default global setting called `defaultImage` too:
+It's not the best practice, but I like to keep things simple.
+
+That's why I call svgs in templates now.
+
+### Subheader and featured images
+
+Use the `image` parameter in your frontmatter (posts). If you want to use an external image use an absolute path.
+
+If you host your images on the same installation, create a folder for your post in the `content/` directory:
 
 ```
-[params]
-  ga_id=""
-  mainSections = ["post"]
-  disqus = "xxxxxxx"
-  defaultImage = "images/shinjuku.jpg"
+content
+   my-post/
+    index.md
+    images/
+      myfeatured.jpg
 ```
 
-In the demo, the relative paths don't start with a "/" because it's in a subfolder (GitHub pages), but you don't have to do the same.
+Then, use relative path in your frontmattter:
 
-It's not the best practice but I like to keep things simple.
+```
+---
+title: "Example 8"
+description: "This is desc 8"
+date: 2023-01-05T11:11:11+01:00
+type: "post"
+draft: false
+image: "images/myfeatured.jpg"
+---
+```
 
-That's also why I call svgs in templates now.
+It's a bit more constraining, but it allows a better organization, as all resources of the page are grouped in the same folder.
 
-**These few changes should not impact previous installations. If so, please open an issue.**
+**These few changes should not impact previous installations too much. If so, please open an issue.**
 
 ### Change colors
 

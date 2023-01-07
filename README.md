@@ -12,7 +12,7 @@
 
 [See online demo](https://jmau111.github.io/hugo-theme-ava-demo)
 
-[Code source demo](https://jgithub.com/mau111/hugo-theme-ava-demo)
+[Code source demo](https://github.com/jmau111/hugo-theme-ava-demo)
 
 ## Installation
 

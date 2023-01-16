@@ -129,9 +129,7 @@ I've included the `humans.txt` file cause I care about this file. Use custom par
     dev_team = ""
     dev_github = ""
     thanks = ""
-    last_update = ""
     standards = ""
-    components = ""
     software = ""
     other_notes = ""
 ```

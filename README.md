@@ -122,7 +122,19 @@ You don't have to remove the one set in the theme but ensure you replace the one
 
 ### humans.txt
 
-I've included the `humans.txt` file cause I care about this file. You can put your name in it or replace this entire file in your `/static/` folder at the root of the project:
+I've included the `humans.txt` file cause I care about this file. Use custom params to customize it:
+
+```
+ [params.humans_txt]
+    dev_team = ""
+    dev_github = ""
+    thanks = ""
+    last_update = ""
+    standards = ""
+    components = ""
+    software = ""
+    other_notes = ""
+```
 
 ### Using the config.toml
 

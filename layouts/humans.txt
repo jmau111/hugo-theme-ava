@@ -19,9 +19,7 @@ Dev GitHub: {{. }}
 {{- end }}
 
 /* SITE */
-{{- with .Site.Params.humans_txt.last_update }}
-Last update: {{ . }}
-{{- end }}
+Last update: {{ now.Format "2006/01/02" }}
 {{- with .Site.Params.humans_txt.standards }}
 Standards: {{ . }}
 {{- end }}

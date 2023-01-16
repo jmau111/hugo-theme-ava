@@ -5,6 +5,14 @@ theme = "hugo-theme-ava"
 paginate = 7
 mainSections = "post"
 
+[outputs]
+  home = ["HTML", "humanstxt"]
+  
+  [outputFormats.humanstxt]
+      baseName = "humans"
+      isPlainText = true
+      mediaType = "text/plain"
+
 [languages]
   [languages.en]
       languageName = "English"

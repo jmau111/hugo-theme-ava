@@ -35,7 +35,17 @@ canonifyURLs = true
     meta_twitter_card = "summary"
     meta_twitter_site = "@gohugoio"
     meta_twitter_creator = "@gohugoio"
-
+    
+ [params.humans_txt]
+    dev_team = ""
+    dev_github = ""
+    thanks = ""
+    last_update = ""
+    standards = ""
+    components = ""
+    software = ""
+    other_notes = ""
+    
 [markup]
     [markup.highlight]
         codeFences = true

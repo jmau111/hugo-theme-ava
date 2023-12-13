@@ -1,6 +1,6 @@
 sectionPagesMenu = "main"
 
-baseURL = 'http://example.org/'
+baseURL = 'https://astridmalter.com/'
 languageCode = 'en-us'
 title = 'Astrid Malter'
 

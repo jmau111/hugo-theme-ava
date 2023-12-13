@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-ava"] 
+  path = themes/hugo-theme-ava 
+  url = https://github.com/jmau111/hugo-theme-ava

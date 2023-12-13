@@ -1,6 +1,22 @@
-[module]
-    [module.hugoVersion]
-    extended = true
-    min = "0.87.0"
+sectionPagesMenu = "main"
+
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Astrid Malter'
 
 hideColorSchemeToggle = true
+theme = 'hugo-theme-ava'
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+[[menu.main]]
+  name = 'About'
+  url = '/about'
+  weight = 20
+[[menu.main]]
+  name = 'Contact'
+  url = '/contact'
+  weight = 30

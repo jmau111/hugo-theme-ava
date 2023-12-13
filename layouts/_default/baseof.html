@@ -7,27 +7,13 @@
     <meta charset="utf-8">
     <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    {{ partial "og.html" . }}
-    {{ partial "icons.html" . }}
-    {{ partial "other-metas.html" . }}
 
-    <script>
-      const storage = localStorage.getItem('dark-mode');
-      if ("dark" === storage
-        || (!storage && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.setAttribute("data-theme", "dark");
-      }
-    </script>
 
-    {{ $darkm := resources.Get "js/darkm.js" }}
     {{- if .Site.IsServer }}
       {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
-      <script src="{{ $darkm.RelPermalink }}"></script>
       <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{- else }}
       {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
-      <script src="{{ ($darkm | minify | fingerprint).Permalink }}"></script>
       <link rel="stylesheet" href="{{ ($style | minify | fingerprint).Permalink }}">
     {{- end }}
 

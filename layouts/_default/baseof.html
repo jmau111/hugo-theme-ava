@@ -30,9 +30,6 @@
       redefining the whole block main -->
       {{ block "main" . }}
         <article>
-          {{- block "subheader" . }}
-            {{ partial "subheader.html" (dict "context" . "site" $.Site) }}
-          {{ end }}
           <div class="content slide-invert">
             {{- block "content" . }}{{ end }}
             {{- block "comments" . }}{{ end }}
@@ -41,7 +38,7 @@
       {{ end }}
     </main>
 
-    {{ partialCached "footer.html" . }}
+    {{ partialCached "footer.html"  . }}
 
     {{ $prefixFree := resources.Get "js/prefixfree.js" }}
 
